@@ -78,11 +78,11 @@ section {
             font-size: 20px;
             line-height: 1.6;
             font-weight: 600;
-            color: #747474;
+            color: $primary;
           }
           h2 {
             font-size: 12px;
-            color: #bdbdbd;
+            color: $secondary;
           }
         }
       }
@@ -99,12 +99,12 @@ section {
       li {
         padding: 15px 0;
         a {
-          color: #bdbdbd;
+          color: $secondary;
           @media only screen and (max-width: 1440px) {
             font-size: 12px;
           }
           &.active {
-            color: #333;
+            color: $dark;
           }
           i {
             margin-right: 10px;
@@ -114,7 +114,7 @@ section {
     }
   }
   .left_pane_post {
-    border-bottom: 1px solid #bbbb;
+    border-bottom: 1px solid $border;
     padding-bottom: 30px;
   }
   .left_pane_post,
@@ -161,7 +161,7 @@ section {
             li {
               padding: 10px 0;
               a {
-                color: #bdbdbd;
+                color: $secondary;
                 position: relative;
                 @media only screen and (max-width: 1440px) {
                   font-size: 12px;
@@ -173,7 +173,7 @@ section {
                   width: 40px;
                   height: 25px;
                   border-radius: 50px;
-                  border: 1px solid #bdbdbd;
+                  border: 1px solid $secondary;
                   display: flex;
                   align-items: center;
                   justify-content: center;
@@ -218,7 +218,7 @@ section {
     flex-direction: column;
     justify-content: flex-end;
     a {
-      color: #333;
+      color: $dark;
       i {
         margin-right: 10px;
       }
@@ -228,17 +228,17 @@ section {
 .content_pane {
   //   padding-left: 30px;
   flex: 1;
-  background-color: #fafafa;
+  background-color: $contentPaneBG;
   @media only screen and (max-width: 1023.9px) {
     margin-top: 50px;
   }
   .story_pane {
     padding-left: 40px;
     padding-right: 30px;
-    border-left: 1px solid #e6e6e6;
-    border-right: 1px solid #e6e6e6;
+    border-left: 1px solid $storyBorder;
+    border-right: 1px solid $storyBorder;
     padding-top: 50px;
-    background-color: #fafafa;
+    background-color: $contentPaneBG;
     @media only screen and (max-width: 1023.9px) {
       border-left: none;
       border-right: none;
@@ -257,14 +257,14 @@ section {
           width: 60px;
           height: 60px;
           border-radius: 50%;
-          border: 2px solid #4f46bb;
+          border: 2px solid $blue;
           object-fit: cover;
         }
         figcaption {
           text-align: center;
           font-size: 12px;
           font-weight: 600;
-          color: #747474;
+          color: $primary;
           margin-top: 10px;
         }
 
@@ -312,7 +312,7 @@ section {
         width: 100%;
       }
       .perf_label {
-        background-color: #4f46bb;
+        background-color: $blue;
         padding: 15px;
         border-radius: 10px;
         flex: 1;
@@ -329,12 +329,12 @@ section {
         }
         h3 {
           font-size: 14px;
-          color: #918ad5;
+          color: $lightBlue;
           margin-bottom: 10px;
         }
         p {
           font-size: 12px;
-          color: #fff;
+          color: $white;
         }
         &.perf_view {
           svg {
@@ -387,7 +387,7 @@ section {
     }
   }
   .chartOuterWrapper {
-    background-color: #fff;
+    background-color: $white;
     border-radius: 10px;
     padding: 20px;
   }
@@ -423,24 +423,24 @@ section {
     .chartHeader {
       h3 {
         font-size: 12px;
-        color: #4f46bb;
+        color: $blue;
         margin-bottom: 30px;
       }
     }
     .eventDistributionWrapper {
-      background-color: #fff;
+      background-color: $white;
       padding: 30px 25px;
       border-radius: 10px;
       //   margin-right: 50px;
       h4 {
         font-size: 12px;
-        color: #4f46bb;
+        color: $blue;
         text-align: center;
         font-weight: 600;
         margin-bottom: 20px;
       }
       .outerCircle {
-        background-color: #d6e1ee;
+        background-color: $outerCircle;
         width: 150px;
         height: 150px;
         border-radius: 50%;
@@ -450,7 +450,7 @@ section {
         margin: 0 auto;
         position: relative;
         .topArc {
-          border: 2px solid #4f46bb;
+          border: 2px solid $blue;
           display: inline-block;
           min-width: 150px;
           min-height: 150px;
@@ -465,7 +465,7 @@ section {
           top: 0px;
         }
         .bottomArc {
-          border: 5px solid #4f46bb;
+          border: 5px solid $blue;
           display: inline-block;
           min-width: 130px;
           min-height: 130px;
@@ -484,7 +484,7 @@ section {
           width: 10px;
           height: 10px;
           border-radius: 50%;
-          background-color: #4f46bb;
+          background-color: $blue;
           bottom: -1px;
           left: 44%;
           transform: translateX(-50%);
@@ -494,8 +494,8 @@ section {
           height: 10px;
           position: absolute;
           border-radius: 50%;
-          border: 1px solid #4f46bb;
-          background-color: #fff;
+          border: 1px solid $blue;
+          background-color: $white;
           top: -3px;
           left: 52%;
           transform: translateX(-50%);
@@ -505,13 +505,13 @@ section {
           height: 10px;
           position: absolute;
           border-radius: 50%;
-          background-color: #fff;
+          background-color: $white;
           top: 53%;
           right: -5px;
           transform: translateY(-50%);
         }
         .innerCircle {
-          background-color: #fff;
+          background-color: $white;
           width: 130px;
           height: 130px;
           border-radius: 50%;
@@ -555,7 +555,7 @@ section {
     }
     .strangeCloud {
       border-radius: 10px;
-      background-color: #f2e8ff;
+      background-color: $thinBlue;
       padding: 20px;
       display: flex;
       flex: 2;
@@ -577,7 +577,7 @@ section {
         figcaption {
           h2 {
             font-size: 14px;
-            color: #4f46bb;
+            color: $blue;
             margin: 20px 0 0;
             white-space: nowrap;
             @media only screen and (max-width: 1023.9px) {
@@ -593,7 +593,7 @@ section {
         }
       }
       .faLabelIcon {
-        background-color: #4f46bb;
+        background-color: $blue;
         padding: 15px;
         border-radius: 50px;
         width: 40px;
@@ -603,7 +603,7 @@ section {
         align-items: center;
         i {
           font-size: 22px;
-          color: #fff;
+          color: $white;
         }
       }
     }
@@ -613,7 +613,7 @@ section {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      background-color: #fff;
+      background-color: $white;
       margin: 0 19px;
       padding: 20px;
       border-radius: 10px;
@@ -626,13 +626,13 @@ section {
       h3 {
         font-size: 12px;
         text-align: center;
-        color: #747474;
+        color: $primary;
         @media only screen and (max-width: 1023.9px) {
           margin-top: 10px;
         }
       }
       .faLabelIcon {
-        background-color: #84e9f5;
+        background-color: $labelColor;
         padding: 15px;
         border-radius: 50px;
         width: 40px;
@@ -642,7 +642,7 @@ section {
         align-items: center;
         i {
           font-size: 22px;
-          color: #fff;
+          color: $white;
         }
       }
     }
@@ -675,7 +675,7 @@ section {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      background-color: #fff;
+      background-color: $white;
       border-radius: 10px;
       padding: 20px;
       flex: 1;
@@ -688,38 +688,38 @@ section {
       .contentInside {
         h2 {
           margin: 0;
-          color: #333;
+          color: $dark;
         }
         p {
           font-size: 14px;
-          color: #4f46bb;
+          color: $blue;
           margin-top: 10px;
         }
       }
     }
     .monthlyWrapper {
-      background-color: #4f46bb;
+      background-color: $blue;
       .contentInside {
         h2 {
           margin: 0;
-          color: #fff;
+          color: $white;
         }
         p {
           font-size: 14px;
-          color: #fff;
+          color: $white;
           margin-top: 10px;
         }
       }
       .progress.blue .fill {
-        stroke: #fa8f72;
+        stroke: $strokeBlueFill;
         transform: rotate(0deg) !important;
       }
       .progress .track {
-        stroke: #fff;
+        stroke: $white;
       }
       .progress .value,
       .progress .text {
-        fill: #fff;
+        fill: $white;
         text-anchor: middle;
       }
     }
@@ -752,7 +752,7 @@ section {
       p {
         font-size: 12px;
         font-weight: 600;
-        color: #747474;
+        color: $primary;
       }
       .chatIconsWrapper {
         display: flex;
@@ -761,7 +761,7 @@ section {
         a {
           width: 40px;
           height: 40px;
-          border: 1px solid #bdbdbd;
+          border: 1px solid $secondary;
           border-radius: 10px;
           display: flex;
           align-items: center;
@@ -772,7 +772,7 @@ section {
             height: 25px;
           }
           i {
-            color: #747474;
+            color: $primary;
             @media only screen and (max-width: 1280px) {
               font-size: 12px;
             }
@@ -802,11 +802,11 @@ section {
         justify-content: center;
         h3 {
           font-size: 20px;
-          color: #333;
+          color: $dark;
         }
         p {
           font-size: 12px;
-          color: #747474;
+          color: $primary;
           margin-top: 5px;
         }
       }
@@ -825,11 +825,11 @@ section {
       h2 {
         font-size: 16px;
         text-align: center;
-        color: #333;
+        color: $dark;
       }
       p {
         font-size: 12px;
-        color: #747474;
+        color: $primary;
         text-align: center;
       }
     }
@@ -855,11 +855,11 @@ section {
     }
     .viewProfileBg {
       background-color: blue;
-      color: #fff;
+      color: $white;
     }
     .viewProfile {
       background-color: transparent;
-      border: 1px solid #e6e6e6;
+      border: 1px solid $storyBorder;
     }
   }
   .addgallerywrapper {
@@ -869,7 +869,7 @@ section {
     }
     .addVideo {
       padding: 15px;
-      background-color: #f2e8ff;
+      background-color: $thinBlue;
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
@@ -891,7 +891,7 @@ section {
       }
       .fa-video {
         font-size: 30px;
-        color: #4f46bb;
+        color: $blue;
         margin-bottom: 10px;
         margin-top: 50px;
         @media only screen and (max-width: 1440px) {
@@ -900,14 +900,14 @@ section {
       }
       h2 {
         font-size: 22px;
-        color: #4f46bb;
+        color: $blue;
         @media only screen and (max-width: 1440px) {
           font-size: 18px;
         }
       }
       p {
         font-size: 12px;
-        color: #4f46bb;
+        color: $blue;
         @media only screen and (max-width: 1440px) {
           font-size: 10px;
         }
@@ -915,7 +915,7 @@ section {
     }
     .addPhoto {
       padding: 15px;
-      background-color: #fef3f1;
+      background-color: $addPhoto;
       height: 150px;
       display: flex;
       flex-direction: column;
@@ -939,7 +939,7 @@ section {
       }
       .fa-camera {
         font-size: 30px;
-        color: #af6d5c;
+        color: $headerRed;
         margin-bottom: 10px;
         margin-top: 50px;
         @media only screen and (max-width: 1440px) {
@@ -948,14 +948,14 @@ section {
       }
       h2 {
         font-size: 22px;
-        color: #af6d5c;
+        color: $headerRed;
         @media only screen and (max-width: 1440px) {
           font-size: 18px;
         }
       }
       p {
         font-size: 12px;
-        color: #af6d5c;
+        color: $headerRed;
         @media only screen and (max-width: 1440px) {
           font-size: 10px;
         }
@@ -985,7 +985,7 @@ section {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        border: 1px solid #fff;
+        border: 1px solid $white;
       }
     }
   }
@@ -996,8 +996,8 @@ section {
   @media only screen and (max-width: 1023.9px) {
     // display: block;
     min-width: 350px;
-    background-color: #fff;
-    box-shadow: 0px 0px 6px -1px #000;
+    background-color: $white;
+    box-shadow: 0px 0px 6px -1px $black;
     padding: 20px;
     position: fixed;
     right: 0;
@@ -1023,7 +1023,7 @@ section {
         p {
           font-size: 12px;
           font-weight: 600;
-          color: #747474;
+          color: $primary;
         }
         .chatIconsWrapper {
           display: flex;
@@ -1032,7 +1032,7 @@ section {
           a {
             width: 40px;
             height: 40px;
-            border: 1px solid #bdbdbd;
+            border: 1px solid $secondary;
             border-radius: 10px;
             display: flex;
             align-items: center;
@@ -1043,7 +1043,7 @@ section {
               height: 25px;
             }
             i {
-              color: #747474;
+              color: $primary;
               @media only screen and (max-width: 1280px) {
                 font-size: 12px;
               }
@@ -1073,11 +1073,11 @@ section {
           justify-content: center;
           h3 {
             font-size: 20px;
-            color: #333;
+            color: $dark;
           }
           p {
             font-size: 12px;
-            color: #747474;
+            color: $primary;
             margin-top: 5px;
           }
         }
@@ -1096,11 +1096,11 @@ section {
         h2 {
           font-size: 16px;
           text-align: center;
-          color: #333;
+          color: $dark;
         }
         p {
           font-size: 12px;
-          color: #747474;
+          color: $primary;
           text-align: center;
         }
       }
@@ -1126,11 +1126,11 @@ section {
       }
       .viewProfileBg {
         background-color: blue;
-        color: #fff;
+        color: $white;
       }
       .viewProfile {
         background-color: transparent;
-        border: 1px solid #e6e6e6;
+        border: 1px solid $storyBorder;
       }
     }
 
@@ -1143,10 +1143,10 @@ section {
         li {
           padding: 15px 0;
           a {
-            color: #bdbdbd;
+            color: $secondary;
 
             &.active {
-              color: #333;
+              color: $dark;
             }
             i {
               margin-right: 10px;
@@ -1156,7 +1156,7 @@ section {
       }
     }
     .left_pane_post {
-      border-bottom: 1px solid #bbbb;
+      border-bottom: 1px solid $border;
       padding-bottom: 30px;
     }
     .left_pane_post,
@@ -1203,7 +1203,7 @@ section {
               li {
                 padding: 10px 0;
                 a {
-                  color: #bdbdbd;
+                  color: $secondary;
                   position: relative;
                   i {
                     margin-right: 10px;
@@ -1212,7 +1212,7 @@ section {
                     width: 40px;
                     height: 25px;
                     border-radius: 50px;
-                    border: 1px solid #bdbdbd;
+                    border: 1px solid $secondary;
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -1252,7 +1252,7 @@ section {
       flex-direction: column;
       justify-content: flex-end;
       a {
-        color: #333;
+        color: $dark;
         i {
           margin-right: 10px;
         }
@@ -1278,7 +1278,7 @@ section {
   transform: rotate(90deg) translate(0px, -80px);
 }
 .progress .track {
-  stroke: #f7f6fc;
+  stroke: $strokeTrack;
 }
 .progress .fill {
   stroke: red;
@@ -1287,13 +1287,13 @@ section {
   transition: stroke-dashoffset 1s;
 }
 .progress.blue .fill {
-  stroke: #fa8f72;
+  stroke: $strokeBlueFill;
   //   transform: rotate(0deg) !important;
 }
 
 .progress .value,
 .progress .text {
-  fill: #4f46bb;
+  fill: $blue;
   text-anchor: middle;
 }
 .progress .text {
@@ -1325,9 +1325,9 @@ section {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #fff;
+    background-color: $white;
     padding: 10px 20px;
-    border-bottom: 1px solid #bdbdbd;
+    border-bottom: 1px solid $secondary;
     width: 100%;
     z-index: 1;
     figure {
@@ -1347,11 +1347,11 @@ section {
           font-size: 20px;
           line-height: 1.6;
           font-weight: 600;
-          color: #747474;
+          color: $primary;
         }
         h2 {
           font-size: 12px;
-          color: #bdbdbd;
+          color: $secondary;
         }
       }
     }
@@ -1365,14 +1365,14 @@ section {
         a {
           width: 40px;
           height: 40px;
-          border: 1px solid #bdbdbd;
+          border: 1px solid $secondary;
           border-radius: 10px;
           display: flex;
           align-items: center;
           justify-content: center;
           margin: 0 5px;
           i {
-            color: #747474;
+            color: $primary;
           }
         }
       }
@@ -1380,7 +1380,7 @@ section {
         .line {
           width: 30px;
           height: 3px;
-          background-color: #4f46bb;
+          background-color: $blue;
           display: block;
           margin: 5px auto;
           margin-left: 10px;
@@ -1393,3 +1393,4 @@ i.fa.fa-chevron-down,
 i.fa.fa-chevron-up {
   margin-left: 10px;
 }
+
