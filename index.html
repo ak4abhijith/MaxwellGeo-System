@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Redwhale Growth & Marketing</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+  </head>
+  <body>
+    <section class="container">
+      <header class="mobileHeader">
+        <figure>
+          <img src="images/logo.png" alt="logo" />
+          <figcaption>
+            <h1>Redwhale</h1>
+            <h2>Growth & Marketing</h2>
+          </figcaption>
+        </figure>
+        <div class="right_panel">
+          <div class="chatIconsWrapper">
+            <a href="#" class="chatWrapper">
+              <i class="fa fa-comment-dots"></i>
+            </a>
+            <a href="#" class="chatWrapper">
+              <i class="fa fa-bell"></i>
+            </a>
+          </div>
+          <div class="hamburger" id="hamburger-1">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </div>
+        </div>
+      </header>
+      <div class="left_pane">
+        <div class="left_pane_top">
+          <div class="logo_wrapper">
+            <div class="logo">
+              <figure>
+                <img src="images/logo.png" alt="logo" />
+                <figcaption>
+                  <h1>Redwhale</h1>
+                  <h2>Growth & Marketing</h2>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="left_pane_menu">
+            <ul>
+              <li>
+                <a href="#" class="active">
+                  <i class="fa fa-house"></i>Dashboard</a
+                >
+              </li>
+              <li>
+                <a href="#"> <i class="fa fa-calendar"></i> Activity</a>
+              </li>
+              <li>
+                <a href="#"> <i class="fa fa-gear"></i> Settings</a>
+              </li>
+            </ul>
+          </div>
+          <div class="left_pane_post">
+            <div class="accordion" id="faq">
+              <div class="card">
+                <div class="card-header" id="faqhead1">
+                  <a
+                    href="#"
+                    class="btn btn-header-link"
+                    data-toggle="collapse"
+                    data-target="#faq1"
+                    aria-expanded="true"
+                    aria-controls="faq1"
+                    >Post <i class="fa fa-chevron-down"></i
+                  ></a>
+                  <a href="#"><i class="fa fa-outline fa-circle-plus"></i></a>
+                </div>
+
+                <div
+                  id="faq1"
+                  class="collapse show"
+                  aria-labelledby="faqhead1"
+                  data-parent="#faq"
+                >
+                  <div class="card-body">
+                    <ul>
+                      <li>
+                        <a href="#"
+                          ><i class="fa fa-square-check"></i>Published</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          ><i class="fa fa-clock"></i>Today's Sheduled<span
+                            class="plusAdd"
+                          >
+                            +2</span
+                          ></a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa fa-bookmark"></i> Bookmarks</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="left_pane_users">
+            <div class="accordion" id="users">
+              <div class="card">
+                <div class="card-header" id="usersHead">
+                  <a
+                    href="#"
+                    class="btn btn-header-link"
+                    data-toggle="collapse"
+                    data-target="#users1"
+                    aria-expanded="true"
+                    aria-controls="users1"
+                    >Favorite Users<i class="fa fa-chevron-down"></i
+                  ></a>
+                  <a href="#"><i class="fa fa-outline fa-circle-plus"></i></a>
+                </div>
+
+                <div
+                  id="users1"
+                  class="collapse"
+                  aria-labelledby="usersHead"
+                  data-parent="#users"
+                >
+                  <div class="card-body">
+                    <ul>
+                        <li>
+                            <a href="#"
+                              ><img src="images/pic1.jpg" alt="user1" />Nathane</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#"
+                              ><img src="images/pic2.jpg" alt="user1" />Sanchez</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#"
+                              ><img src="images/pic3.jpg" alt="user1" />Ramos</a
+                            >
+                          </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="left_pane_bottom">
+          <a href="#"><i class="fa fa-plus"></i>Invite new member</a>
+        </div>
+      </div>
+      <div class="content_pane">
+        <div class="story_pane">
+          <div class="user_story">
+            <figure>
+              <img src="images/pic1.jpg" alt="user one" />
+              <figcaption>Add to</figcaption>
+              <span class="addIcon">+</span>
+            </figure>
+            <figure>
+              <img src="images/pic2.jpg" alt="user one" />
+              <figcaption>Johny</figcaption>
+            </figure>
+            <figure>
+              <img src="images/pic3.jpg" alt="user one" />
+              <figcaption>Sam</figcaption>
+            </figure>
+            <figure>
+              <img src="images/pic1.jpg" alt="user one" />
+              <figcaption>Koshy</figcaption>
+            </figure>
+            <figure>
+              <img src="images/pic2.jpg" alt="user one" />
+              <figcaption>Nathane</figcaption>
+            </figure>
+            <figure>
+              <img src="images/pic3.jpg" alt="user one" />
+              <figcaption>Sanchez</figcaption>
+            </figure>
+            <figure>
+              <img src="images/pic1.jpg" alt="user one" />
+              <figcaption>Raphel</figcaption>
+            </figure>
+            <figure>
+              <img src="images/pic2.jpg" alt="user one" />
+              <figcaption>Leo</figcaption>
+            </figure>
+            <figure>
+              <img src="images/pic3.jpg" alt="user one" />
+              <figcaption>Sanchez</figcaption>
+            </figure>
+          </div>
+          <div class="performance_tab">
+            <h2>30 Days Performance</h2>
+            <div class="performance_button">
+              <div class="perf_view perf_label">
+                <h3>VIEWS</h3>
+                <p>7,48,125</p>
+                <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 240" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(253, 187, 100, 0.2)" offset="0%"></stop><stop stop-color="rgba(253, 187, 100, 0.2)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,216L34.3,208C68.6,200,137,184,206,176C274.3,168,343,168,411,144C480,120,549,72,617,72C685.7,72,754,120,823,152C891.4,184,960,200,1029,172C1097.1,144,1166,72,1234,68C1302.9,64,1371,128,1440,136C1508.6,144,1577,96,1646,76C1714.3,56,1783,64,1851,88C1920,112,1989,152,2057,176C2125.7,200,2194,208,2263,200C2331.4,192,2400,168,2469,136C2537.1,104,2606,64,2674,60C2742.9,56,2811,88,2880,100C2948.6,112,3017,104,3086,92C3154.3,80,3223,64,3291,52C3360,40,3429,32,3497,52C3565.7,72,3634,120,3703,144C3771.4,168,3840,168,3909,140C3977.1,112,4046,56,4114,52C4182.9,48,4251,96,4320,116C4388.6,136,4457,128,4526,140C4594.3,152,4663,184,4731,192C4800,200,4869,184,4903,176L4937.1,168L4937.1,240L4902.9,240C4868.6,240,4800,240,4731,240C4662.9,240,4594,240,4526,240C4457.1,240,4389,240,4320,240C4251.4,240,4183,240,4114,240C4045.7,240,3977,240,3909,240C3840,240,3771,240,3703,240C3634.3,240,3566,240,3497,240C3428.6,240,3360,240,3291,240C3222.9,240,3154,240,3086,240C3017.1,240,2949,240,2880,240C2811.4,240,2743,240,2674,240C2605.7,240,2537,240,2469,240C2400,240,2331,240,2263,240C2194.3,240,2126,240,2057,240C1988.6,240,1920,240,1851,240C1782.9,240,1714,240,1646,240C1577.1,240,1509,240,1440,240C1371.4,240,1303,240,1234,240C1165.7,240,1097,240,1029,240C960,240,891,240,823,240C754.3,240,686,240,617,240C548.6,240,480,240,411,240C342.9,240,274,240,206,240C137.1,240,69,240,34,240L0,240Z"></path></svg>
+                <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 400" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><path d="M 0,400 C 0,400 0,200 0,200 C 79.12057712126418,166.32085194091377 158.24115424252835,132.64170388182757 233,140 C 307.75884575747165,147.35829611817243 378.1559601511508,195.75403641360356 435,219 C 491.8440398488492,242.24596358639644 535.1350051528684,240.34215046375817 595,221 C 654.8649948471316,201.65784953624183 731.3040192373754,164.8773617313638 811,159 C 890.6959807626246,153.1226382686362 973.6489178976299,178.1484026107867 1053,197 C 1132.3510821023701,215.8515973892133 1208.1003091721057,228.52902782548952 1272,228 C 1335.8996908278943,227.47097217451048 1387.949845413947,213.73548608725525 1440,200 C 1440,200 1440,400 1440,400 Z" stroke="none" stroke-width="0" fill="#fdbb64" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-0"></path></svg>
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" viewBox="0 0 2400 800"><g fill="#fdbb64ff" transform="matrix(1,0,0,1,10.303955078125,282.4111976623535)"><path d="M-10,10C23.333333333333336,11.25,85.41666666666667,26.625,150,16C214.58333333333331,5.375,237.5,-49.125,300,-41C362.5,-32.875,387.5,54.583333333333336,450,55C512.5,55.416666666666664,537.5,-36.916666666666664,600,-39C662.5,-41.083333333333336,687.5,38.958333333333336,750,45C812.5,51.041666666666664,837.5,-12.5,900,-10C962.5,-7.5,987.5,59.083333333333336,1050,57C1112.5,54.916666666666664,1137.5,-23.75,1200,-20C1262.5,-16.25,1287.5,75.83333333333333,1350,75C1412.5,74.16666666666667,1437.5,-22.75,1500,-24C1562.5,-25.25,1587.5,71.08333333333333,1650,69C1712.5,66.91666666666667,1737.5,-34.416666666666664,1800,-34C1862.5,-33.583333333333336,1887.5,68.29166666666667,1950,71C2012.5,73.70833333333333,2037.5,-16.833333333333332,2100,-21C2162.5,-25.166666666666668,2187.5,42.458333333333336,2250,51C2312.5,59.541666666666664,2316.6666666666665,-52.70833333333333,2400,20C2483.3333333333335,92.70833333333333,3254.1666666666665,216.66666666666669,2650,400C2045.8333333333335,583.3333333333333,156.25,795.8333333333334,-500,900" transform="matrix(1,0,0,1,0,59)" opacity="0.05"></path><path d="M-10,10C23.333333333333336,11.25,85.41666666666667,26.625,150,16C214.58333333333331,5.375,237.5,-49.125,300,-41C362.5,-32.875,387.5,54.583333333333336,450,55C512.5,55.416666666666664,537.5,-36.916666666666664,600,-39C662.5,-41.083333333333336,687.5,38.958333333333336,750,45C812.5,51.041666666666664,837.5,-12.5,900,-10C962.5,-7.5,987.5,59.083333333333336,1050,57C1112.5,54.916666666666664,1137.5,-23.75,1200,-20C1262.5,-16.25,1287.5,75.83333333333333,1350,75C1412.5,74.16666666666667,1437.5,-22.75,1500,-24C1562.5,-25.25,1587.5,71.08333333333333,1650,69C1712.5,66.91666666666667,1737.5,-34.416666666666664,1800,-34C1862.5,-33.583333333333336,1887.5,68.29166666666667,1950,71C2012.5,73.70833333333333,2037.5,-16.833333333333332,2100,-21C2162.5,-25.166666666666668,2187.5,42.458333333333336,2250,51C2312.5,59.541666666666664,2316.6666666666665,-52.70833333333333,2400,20C2483.3333333333335,92.70833333333333,3254.1666666666665,216.66666666666669,2650,400C2045.8333333333335,583.3333333333333,156.25,795.8333333333334,-500,900" transform="matrix(1,0,0,1,0,118)" opacity="1.00"></path></g></svg> -->
+                <!-- <svg
+                  width="100%"
+                  height="100%"
+                  id="svg"
+                  viewBox="0 0 1440 400"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="transition duration-300 ease-in-out delay-150"
+                >
+                  <path
+                    d="M 0,400 C 0,400 0,133 0,133 C 50.10232345644472,152.2998287643943 100.20464691288944,171.59965752878864 142,175 C 183.79535308711056,178.40034247121136 217.283735804887,165.90119864923972 260,163 C 302.716264195113,160.09880135076028 354.6604098675625,166.79554787425252 405,155 C 455.3395901324375,143.20445212574748 504.07462472486316,112.91660985375024 538,118 C 571.9253752751368,123.08339014624976 591.0410912329849,163.53801271074641 636,176 C 680.9589087670151,188.46198728925359 751.7610103431972,172.9313393032641 806,148 C 860.2389896568028,123.0686606967359 897.914867394226,88.73663007619719 932,86 C 966.085132605774,83.26336992380281 996.5795200798982,112.12214039194714 1040,136 C 1083.4204799201018,159.87785960805286 1139.767052286181,178.77480835601423 1185,169 C 1230.232947713819,159.22519164398577 1264.3522707753768,120.77862618399593 1305,110 C 1345.6477292246232,99.22137381600407 1392.8238646123116,116.11068690800204 1440,133 C 1440,133 1440,400 1440,400 Z"
+                    stroke="none"
+                    stroke-width="0"
+                    fill="#fdbb64"
+                    fill-opacity="0.53"
+                    class="transition-all duration-300 ease-in-out delay-150 path-0"
+                  ></path>
+                  <path
+                    d="M 0,400 C 0,400 0,266 0,266 C 55.29105625983895,296.48155277226374 110.5821125196779,326.9631055445275 151,315 C 191.4178874803221,303.0368944554725 216.96260618112728,248.62913059415385 249,232 C 281.0373938188727,215.37086940584615 319.567462755813,236.52037207885695 371,251 C 422.432537244187,265.47962792114305 486.76754279562056,273.2893810904184 530,283 C 573.2324572043794,292.7106189095816 595.362366061705,304.3221035594694 636,297 C 676.637633938295,289.6778964405306 735.7829929575595,263.422204671704 788,254 C 840.2170070424405,244.57779532829602 885.5056621080572,251.9890777537147 931,269 C 976.4943378919428,286.0109222462853 1022.1943586102118,312.6214843134373 1058,302 C 1093.8056413897882,291.3785156865627 1119.7169034510966,243.5249849925361 1160,222 C 1200.2830965489034,200.4750150074639 1254.9380275854007,205.27857571641823 1304,217 C 1353.0619724145993,228.72142428358177 1396.5309862072995,247.36071214179088 1440,266 C 1440,266 1440,400 1440,400 Z"
+                    stroke="none"
+                    stroke-width="0"
+                    fill="#fdbb64"
+                    fill-opacity="1"
+                    class="transition-all duration-300 ease-in-out delay-150 path-1"
+                  ></path>
+                </svg> -->
+              </div>
+
+              <div class="perf_follows perf_label">
+                <h3>FOLLOWS</h3>
+                <p>48,125</p>
+                <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 490" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(250, 137, 107, 0.2)" offset="0%"></stop><stop stop-color="rgba(250, 137, 107, 0.2)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,343L26.7,318.5C53.3,294,107,245,160,204.2C213.3,163,267,131,320,171.5C373.3,212,427,327,480,334.8C533.3,343,587,245,640,236.8C693.3,229,747,310,800,359.3C853.3,408,907,425,960,408.3C1013.3,392,1067,343,1120,294C1173.3,245,1227,196,1280,220.5C1333.3,245,1387,343,1440,367.5C1493.3,392,1547,343,1600,302.2C1653.3,261,1707,229,1760,220.5C1813.3,212,1867,229,1920,220.5C1973.3,212,2027,180,2080,179.7C2133.3,180,2187,212,2240,220.5C2293.3,229,2347,212,2400,228.7C2453.3,245,2507,294,2560,277.7C2613.3,261,2667,180,2720,179.7C2773.3,180,2827,261,2880,261.3C2933.3,261,2987,180,3040,196C3093.3,212,3147,327,3200,318.5C3253.3,310,3307,180,3360,179.7C3413.3,180,3467,310,3520,326.7C3573.3,343,3627,245,3680,196C3733.3,147,3787,147,3813,147L3840,147L3840,490L3813.3,490C3786.7,490,3733,490,3680,490C3626.7,490,3573,490,3520,490C3466.7,490,3413,490,3360,490C3306.7,490,3253,490,3200,490C3146.7,490,3093,490,3040,490C2986.7,490,2933,490,2880,490C2826.7,490,2773,490,2720,490C2666.7,490,2613,490,2560,490C2506.7,490,2453,490,2400,490C2346.7,490,2293,490,2240,490C2186.7,490,2133,490,2080,490C2026.7,490,1973,490,1920,490C1866.7,490,1813,490,1760,490C1706.7,490,1653,490,1600,490C1546.7,490,1493,490,1440,490C1386.7,490,1333,490,1280,490C1226.7,490,1173,490,1120,490C1066.7,490,1013,490,960,490C906.7,490,853,490,800,490C746.7,490,693,490,640,490C586.7,490,533,490,480,490C426.7,490,373,490,320,490C266.7,490,213,490,160,490C106.7,490,53,490,27,490L0,490Z"></path></svg>
+                <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 400" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><path d="M 0,400 C 0,400 0,200 0,200 C 69.9553418069392,212.01442803160427 139.9106836138784,224.0288560632085 211,210 C 282.0893163861216,195.9711439367915 354.3126073514257,155.89900377877018 425,152 C 495.6873926485743,148.10099622122982 564.838886980419,180.37512882171077 626,199 C 687.161113019581,217.62487117828923 740.3318447268979,222.6004809343868 801,200 C 861.6681552731021,177.3995190656132 929.8337341119891,127.22294744074205 1000,128 C 1070.166265888011,128.77705255925795 1142.3332188251459,180.50772930264512 1216,201 C 1289.6667811748541,221.49227069735488 1364.833390587427,210.74613534867746 1440,200 C 1440,200 1440,400 1440,400 Z" stroke="none" stroke-width="0" fill="#fa896b" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-0"></path></svg>
+                <!-- <svg
+                  width="100%"
+                  height="100%"
+                  id="svg"
+                  viewBox="0 0 1440 400"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="transition duration-300 ease-in-out delay-150"
+                >
+                  <path
+                    d="M 0,400 C 0,400 0,133 0,133 C 61.28461538461539,133.0102564102564 122.56923076923078,133.0205128205128 208,122 C 293.4307692307692,110.97948717948718 403.0076923076923,88.92820512820514 501,96 C 598.9923076923077,103.07179487179486 685.4000000000001,139.26666666666668 752,159 C 818.5999999999999,178.73333333333332 865.3923076923077,182.0051282051282 944,177 C 1022.6076923076923,171.9948717948718 1133.0307692307692,158.7128205128205 1221,150 C 1308.9692307692308,141.2871794871795 1374.4846153846154,137.14358974358976 1440,133 C 1440,133 1440,400 1440,400 Z"
+                    stroke="none"
+                    stroke-width="0"
+                    fill="#fa896b"
+                    fill-opacity="0.53"
+                    class="transition-all duration-300 ease-in-out delay-150 path-0"
+                  ></path>
+                  <path
+                    d="M 0,400 C 0,400 0,266 0,266 C 111.33333333333331,236 222.66666666666663,206 284,220 C 345.33333333333337,234 356.66666666666674,292 435,290 C 513.3333333333333,288 658.6666666666665,226 764,221 C 869.3333333333335,216 934.6666666666667,268 989,295 C 1043.3333333333333,322 1086.6666666666667,324 1160,315 C 1233.3333333333333,306 1336.6666666666665,286 1440,266 C 1440,266 1440,400 1440,400 Z"
+                    stroke="none"
+                    stroke-width="0"
+                    fill="#fa896b"
+                    fill-opacity="1"
+                    class="transition-all duration-300 ease-in-out delay-150 path-1"
+                  ></path>
+                </svg> -->
+              </div>
+              <div class="perf_likes perf_label">
+                <h3>LIKES</h3>
+                <p>12,48,125</p>
+                <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 490" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(132, 233, 245, 0.2)" offset="0%"></stop><stop stop-color="rgba(132, 233, 245, 0.2)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,343L60,318.5C120,294,240,245,360,204.2C480,163,600,131,720,171.5C840,212,960,327,1080,334.8C1200,343,1320,245,1440,236.8C1560,229,1680,310,1800,359.3C1920,408,2040,425,2160,408.3C2280,392,2400,343,2520,294C2640,245,2760,196,2880,220.5C3000,245,3120,343,3240,367.5C3360,392,3480,343,3600,302.2C3720,261,3840,229,3960,220.5C4080,212,4200,229,4320,220.5C4440,212,4560,180,4680,179.7C4800,180,4920,212,5040,220.5C5160,229,5280,212,5400,228.7C5520,245,5640,294,5760,277.7C5880,261,6000,180,6120,179.7C6240,180,6360,261,6480,261.3C6600,261,6720,180,6840,196C6960,212,7080,327,7200,318.5C7320,310,7440,180,7560,179.7C7680,180,7800,310,7920,326.7C8040,343,8160,245,8280,196C8400,147,8520,147,8580,147L8640,147L8640,490L8580,490C8520,490,8400,490,8280,490C8160,490,8040,490,7920,490C7800,490,7680,490,7560,490C7440,490,7320,490,7200,490C7080,490,6960,490,6840,490C6720,490,6600,490,6480,490C6360,490,6240,490,6120,490C6000,490,5880,490,5760,490C5640,490,5520,490,5400,490C5280,490,5160,490,5040,490C4920,490,4800,490,4680,490C4560,490,4440,490,4320,490C4200,490,4080,490,3960,490C3840,490,3720,490,3600,490C3480,490,3360,490,3240,490C3120,490,3000,490,2880,490C2760,490,2640,490,2520,490C2400,490,2280,490,2160,490C2040,490,1920,490,1800,490C1680,490,1560,490,1440,490C1320,490,1200,490,1080,490C960,490,840,490,720,490C600,490,480,490,360,490C240,490,120,490,60,490L0,490Z"></path></svg>
+                <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 400" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><path d="M 0,400 C 0,400 0,200 0,200 C 69.9553418069392,212.01442803160427 139.9106836138784,224.0288560632085 211,210 C 282.0893163861216,195.9711439367915 354.3126073514257,155.89900377877018 425,152 C 495.6873926485743,148.10099622122982 564.838886980419,180.37512882171077 626,199 C 687.161113019581,217.62487117828923 740.3318447268979,222.6004809343868 801,200 C 861.6681552731021,177.3995190656132 929.8337341119891,127.22294744074205 1000,128 C 1070.166265888011,128.77705255925795 1142.3332188251459,180.50772930264512 1216,201 C 1289.6667811748541,221.49227069735488 1364.833390587427,210.74613534867746 1440,200 C 1440,200 1440,400 1440,400 Z" stroke="none" stroke-width="0" fill="#84e9f5" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-0"></path></svg>
+                <!-- <svg
+                  width="100%"
+                  height="100%"
+                  id="svg"
+                  viewBox="0 0 1440 500"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="transition duration-300 ease-in-out delay-150"
+                >
+                  <path
+                    d="M 0,500 C 0,500 0,166 0,166 C 120.41148325358853,163.21531100478467 240.82296650717706,160.43062200956936 323,173 C 405.17703349282294,185.56937799043064 449.11961722488036,213.4928229665072 527,216 C 604.8803827751196,218.5071770334928 716.6985645933013,195.59808612440193 833,194 C 949.3014354066987,192.40191387559807 1070.086124401914,212.11483253588517 1172,211 C 1273.913875598086,209.88516746411483 1356.9569377990429,187.94258373205741 1440,166 C 1440,166 1440,500 1440,500 Z"
+                    stroke="none"
+                    stroke-width="0"
+                    fill="#84e9f5"
+                    fill-opacity="0.53"
+                    class="transition-all duration-300 ease-in-out delay-150 path-0"
+                  ></path>
+                  <path
+                    d="M 0,500 C 0,500 0,333 0,333 C 127.26315789473682,323.42105263157896 254.52631578947364,313.8421052631579 335,312 C 415.47368421052636,310.1578947368421 449.1578947368423,316.05263157894734 543,331 C 636.8421052631577,345.94736842105266 790.8421052631577,369.94736842105266 906,383 C 1021.1578947368423,396.05263157894734 1097.4736842105265,398.15789473684214 1180,388 C 1262.5263157894735,377.84210526315786 1351.2631578947367,355.42105263157896 1440,333 C 1440,333 1440,500 1440,500 Z"
+                    stroke="none"
+                    stroke-width="0"
+                    fill="#84e9f5"
+                    fill-opacity="1"
+                    class="transition-all duration-300 ease-in-out delay-150 path-1"
+                  ></path>
+                </svg> -->
+              </div>
+            </div>
+          </div>
+          <div class="analyticsTab">
+            <div class="row">
+              <div class="col-lg-8 chart_row">
+                <h2>Analytics</h2>
+                <div class="chartOuterWrapper">
+                  <div class="chartHeader">
+                    <h3>Daily Views</h3>
+                  </div>
+                  <div class="chartWrapper">
+                    <canvas
+                      id="myChart"
+                      style="max-width: 600px; max-height: 150px"
+                    ></canvas>
+                  </div>
+                </div>
+                <div class="threeBlockTab">
+                  <a href="#" class="strangeCloud">
+                    <figure>
+                      <img src="images/church.jpg" alt="strange" />
+                      <figcaption>
+                        <h2>Strange Cloud Formation</h2>
+                        <p>By Mike Taylor</p>
+                      </figcaption>
+                    </figure>
+                    <span class="faLabelIcon">
+                      <i class="fa fa-solid fa-pause"></i>
+                    </span>
+                  </a>
+                  <a href="#" class="schedulepost">
+                    <span class="faLabelIcon">
+                      <i class="fa fa-calendar"></i>
+                    </span>
+                    <h3>Scheduled <br />Posts</h3>
+                  </a>
+                  <a href="#" class="addNewPost">
+                    <span class="faLabelIcon">
+                        <i class="fa fa-outline fa-plus"></i>
+                    </span>
+                    <h3>Add New <br />Post</h3>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <h2>Events Distributions</h2>
+                <div class="eventDistributionWrapper">
+                  <h4>Last 30 Days Performance</h4>
+                  <div class="outerCircle">
+                    <div class="topArc"></div>
+                    <span class="topArcDotOne"></span>
+                    <span class="topArcDotTwo"></span>
+                    <div class="innerCircle">
+                      <div class="bottomArc"></div>
+                      <span class="bottomArcDot"></span>
+                      <h5>300k</h5>
+                      <p>Total Events</p>
+                    </div>
+                  </div>
+                  <h6>Events DISTRIBUTION</h6>
+                  <div class="socialIcons">
+                    <p><img src="images/likes.png" />Likes</p>
+                    <p><img src="images/views.png" />Views</p>
+                    <p><img src="images/follows.png" />Follows</p>
+                    <p><img src="images/shares.png" />Shares</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="statisticswrapper">
+            <h2>Statistics</h2>
+            <div class="weeklyOuterWrapper">
+              <div class="weeklyWrapper">
+                <div class="contentInside">
+                  <h2>Weekly Target</h2>
+                  <p>25% achieved</p>
+                </div>
+                <div id="wrapper" class="center">
+                  <svg
+                    class="progress blue noselect"
+                    data-progress="25"
+                    x="0px"
+                    y="0px"
+                    viewBox="0 0 80 80"
+                  >
+                    <path
+                      class="track"
+                      d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0"
+                    />
+                    <path
+                      class="fill"
+                      d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0"
+                    />
+                    <text class="value" x="50%" y="55%">0%</text>
+                  </svg>
+                </div>
+              </div>
+              <div class="weeklyWrapper monthlyWrapper">
+                <div class="contentInside">
+                  <h2>Monthly Target</h2>
+                  <p>25% achieved</p>
+                </div>
+                <div id="wrapper" class="center">
+                  <svg
+                    class="progress blue noselect"
+                    data-progress="50"
+                    x="0px"
+                    y="0px"
+                    viewBox="0 0 80 80"
+                  >
+                    <path
+                      class="track"
+                      d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0"
+                    />
+                    <path
+                      class="fill"
+                      d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0"
+                    />
+                    <text class="value" x="50%" y="55%">0%</text>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="right_pane">
+        <div class="profielWrapper">
+          <div class="nameWrapper">
+            <div>
+              <h2>Hi Shakir</h2>
+              <p>Good Morning</p>
+            </div>
+            <div class="chatIconsWrapper">
+              <a href="#" class="chatWrapper">
+                <i class="fa fa-comment-dots"></i>
+              </a>
+              <a href="#" class="chatWrapper">
+                <i class="fa fa-bell"></i>
+              </a>
+            </div>
+          </div>
+
+          <figure class="profileImage">
+            <img src="images/pic1.jpg" />
+            <figcaption>
+              <h3>AR Shakir</h3>
+              <p>UI/UX Designer @Redwhale</p>
+            </figcaption>
+          </figure>
+          <div class="followingList">
+            <div class="followers">
+              <h2>786k</h2>
+              <p>Followers</p>
+            </div>
+            <div class="followers">
+              <h2>298</h2>
+              <p>Following</p>
+            </div>
+            <div class="followers">
+              <h2>80</h2>
+              <p>Post</p>
+            </div>
+          </div>
+          <div class="ButtonWrapper">
+            <button class="viewProfileBg">View Profile</button>
+            <button class="viewProfile">Edit Profile</button>
+          </div>
+
+          <div class="addgallerywrapper">
+            <a href="#" class="addVideo">
+              <i class="fa fa-xmark"></i>
+              <i class="fa fa-video"></i>
+              <h2>Videos</h2>
+              <p>Click to Add Video</p>
+            </a>
+            <a href="#" class="addPhoto">
+              <i class="fa fa-xmark"></i>
+              <i class="fa fa-camera"></i>
+              <h2>Photos</h2>
+              <p>Click to Add Photo</p>
+            </a>
+          </div>
+          <div class="gallerOuter">
+            <div class="galleryWrapper">
+              <figure>
+                <img src="images/car.jpg" alt="car" />
+              </figure>
+              <figure>
+                <img src="images/tree.jpg" alt="tree" />
+              </figure>
+              <figure>
+                <img src="images/sky.jpg" alt="sky" />
+              </figure>
+              <figure>
+                <img src="images/tree.jpg" alt="tree" />
+              </figure>
+              <figure>
+                <img src="images/car.jpg" alt="car" />
+              </figure>
+              <figure>
+                <img src="images/sky.jpg" alt="sky" />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mobile_toggle_container">
+        <div class="content_toggle">
+          <div class="profielWrapper">
+            <div class="nameWrapper">
+              <div>
+                <h2>Hi Shakir</h2>
+                <p>Good Morning</p>
+              </div>
+              <div class="chatIconsWrapper">
+                <a href="#" class="chatWrapper">
+                    <i class="fa fa-xmark"></i>
+                </a>
+                
+              </div>
+            </div>
+
+            <figure class="profileImage">
+              <img src="images/pic1.jpg" />
+              <figcaption>
+                <h3>AR Shakir</h3>
+                <p>UI/UX Designer @Redwhale</p>
+              </figcaption>
+            </figure>
+            <div class="followingList">
+              <div class="followers">
+                <h2>786k</h2>
+                <p>Followers</p>
+              </div>
+              <div class="followers">
+                <h2>298</h2>
+                <p>Following</p>
+              </div>
+              <div class="followers">
+                <h2>80</h2>
+                <p>Post</p>
+              </div>
+            </div>
+            <div class="ButtonWrapper">
+              <button class="viewProfileBg">View Profile</button>
+              <button class="viewProfile">Edit Profile</button>
+            </div>
+          </div>
+
+          <div class="left_pane_menu">
+            <ul>
+              <li>
+                <a href="#" class="active">
+                  <i class="fa fa-house"></i>Dashboard</a
+                >
+              </li>
+              <li>
+                <a href="#"> <i class="fa fa-calendar"></i> Activity</a>
+              </li>
+              <li>
+                <a href="#"> <i class="fa fa-gear"></i> Settings</a>
+              </li>
+            </ul>
+          </div>
+          <div class="left_pane_post">
+            <div class="accordion" id="faq">
+              <div class="card">
+                <div class="card-header" id="faqhead1">
+                  <a
+                    href="#"
+                    class="btn btn-header-link"
+                    data-toggle="collapse"
+                    data-target="#faq1"
+                    aria-expanded="true"
+                    aria-controls="faq1"
+                    >Post <i class="fa fa-chevron-down"></i
+                  ></a>
+                  <a href="#"><i class="fa fa-outline fa-circle-plus"></i></a>
+                </div>
+
+                <div
+                  id="faq1"
+                  class="collapse show"
+                  aria-labelledby="faqhead1"
+                  data-parent="#faq"
+                >
+                  <div class="card-body">
+                    <ul>
+                      <li>
+                        <a href="#"
+                          ><i class="fa fa-square-check"></i>Published</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          ><i class="fa fa-clock"></i>Today's Sheduled<span
+                            class="plusAdd"
+                          >
+                            +2</span
+                          ></a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa fa-bookmark"></i> Bookmarks</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="left_pane_users">
+            <div class="accordion" id="users">
+              <div class="card">
+                <div class="card-header" id="usersHead">
+                  <a
+                    href="#"
+                    class="btn btn-header-link"
+                    data-toggle="collapse"
+                    data-target="#users1"
+                    aria-expanded="true"
+                    aria-controls="users1"
+                    >Favorite Users<i class="fa fa-chevron-down"></i
+                  ></a>
+                  <a href="#"><i class="fa fa-outline fa-circle-plus"></i></a>
+                </div>
+
+                <div
+                  id="users1"
+                  class="collapse"
+                  aria-labelledby="usersHead"
+                  data-parent="#users"
+                >
+                  <div class="card-body">
+                    <ul>
+                      <li>
+                        <a href="#"
+                          ><img src="images/pic1.jpg" alt="user1" />Nathane</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          ><img src="images/pic2.jpg" alt="user1" />Sanchez</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          ><img src="images/pic3.jpg" alt="user1" />Ramos</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="left_pane_bottom">
+          <a href="#"><i class="fa fa-plus"></i>Invite new member</a>
+        </div>
+
+        </div>
+      </div>
+    </section>
+
+    <script src="js/custom.js"></script>
+  </body>
+</html>
